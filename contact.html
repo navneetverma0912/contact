@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicons/favicon.png">
+    <title>Tutoring | Assessments | Scoring | Editorial Services</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+      </style>
+    <!--Font Awesome (added because you use icons in your prepend/append)-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" >
+    <style>
+      #map {
+          height: 400px;
+          width: 100%;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLWB37TC67"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-XLWB37TC67');
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="assessments.html">Assessment</a></li>
+                <li><a class="dropdown-item" href="online-tutoring.html">Tutoring</a></li> 
+                <li><a href="editorial-services.html" class="dropdown-item">Editorial Services &nbsp;&nbsp; </a>
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle"></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="graphic-support-service.html">Graphic Support Service</a></li>
+                    <li><a class="dropdown-item" href="text-book-service.html">Text Book Service</a></li>
+                    <li><a class="dropdown-item" href="data-service.html">Data Service </a></li>
+                  </ul>
+                </div>
+                </li>
+                <li><a class="dropdown-item" href="hand-scoring.html">Scoring</a></li>
+                <li><a class="dropdown-item" href="https://triviumcte.com/" target="_blank" rel="noopener noreferrer">CTE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Careers </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="careers.html">Careers Home</a></li>
+                <li><a class="dropdown-item" href="/Job/">Explore Jobs</a></li> 
+             </ul>
+            </li>
+            <!-- <li class="nav-item ">
+              <a class="nav-link" href="case-studies.html">Case Studies</a>
+            </li> -->
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      <div class="innBannerBox">
+        <div class="container">
+          <h1 class="pageHeading">Contact Us</h1>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+        <div class="contactPage">
+            <div class="container"> 
+              <div class="contactBox">
+                <div class="contactLeft">
+                    <!--<form action="">-->
+                    <div id="contactMessage" style="display:none;"></div>
+
+                    <form id="contactForm" action="contact-submit.php" method="POST">
+                        <div class="form-group"> 
+                          <input type="text" class="form-control myInput" id="name" required name="name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group"> 
+                            <input type="text" required name="number" class="form-control myInput" id="number" placeholder="Phone">
+                          </div>
+                        <div class="form-group"> 
+                          <input type="email" name="email" required class="form-control myInput" id="email" placeholder="Email ID">
+                        </div>
+                        <div class="form-group"> 
+                          <textarea class="form-control myInput" id="message" rows="4" name="ask" required placeholder="Ask question"></textarea>
+                        </div>
+                        <button name="csubmit" type="submit" class="btn">Submit</button>
+                      </form>
+                </div>
+                <div class="contactRight">
+                  <h3>Get in touch, we would love to help you!</h3>
+                    <div class="deviderLine"></div>
+                    <div class="mailRow">
+                        <span><img src="images/mailwhite.svg" alt="mail"></span>
+                        <h5>For careers</h5>
+                        <a href="mailto:jobs@triviumedu.com">jobs@triviumedu.com</a>
+                    </div>
+                    <div class="mailRow">
+                        <span><img src="images/mailwhite.svg" alt="mail"></span>
+                        <h5>For business inquiries</h5>
+                        <a href="mailto:inquiry@triviumedu.com">inquiry@triviumedu.com</a>
+                    </div> 
+                </div> 
+              </div>    
+            </div>
+          </div> 
+        <div class="mapOut">
+            <img src="./images/map.png" class="mapImg"> 
+            <div class="pin1">
+              <span class="mapPin"><img src="./images/pin1.svg" alt="map"></span>
+              <div class="address">
+                F-4, Okhla Industrial Area, Phase-I, New Delhi - 110020, <span>India</span>
+              </div>
+              </div> 
+            <div class="pin3">
+              <span class="mapPin"><img src="./images/pin2.svg" alt="map"></span>
+              <div class="address">
+                Suite 100-The Old School House- Little Coxwell – Oxfordshire - SN7 7LW-<span>UK</span>
+              </div>
+            </div>
+            <div class="pin2">
+              <span class="mapPin"><img src="./images/pin3.svg" alt="map"></span>
+              <div class="address">
+                220 Davidson Ave, Suite 118, Somerset NJ 08873 <span>NJ</span>
+              </div>
+            </div>
+        </div>    
+    </div> 
+     <!-- FOOTER -->
+     <footer>
+      <div class="container"> 
+          <div class="row">
+            <!-- <div class="col-md-12 col-lg-4 footerAbout">
+              <img src="images/footerLogo.svg" alt="Trivium">
+              <p>Trivium was founded in 2010 by the Master 
+                franchisee of The Princeton Review In India. 
+                Trivium offers services in assessment development,
+                 eTutoring, hand grading and content support to 
+                education companies globally...</p>
+                <a href="#" class="readMore">READ MORE</a>
+            </div> -->
+            <div class="col-md-12 col-lg-4">
+              <div class="footerLinksOut">
+                <div class="footerLinks">
+                    <h4>Services</h4>
+                    <ul>
+                       <li>
+                        <a href="assessments.html">Assessment</a>
+                      </li>
+                      <li>
+                        <a href="online-tutoring.html">Tutoring</a>
+                      </li>
+                      <li>
+                        <a href="editorial-services.html">Editorial Services</a>
+                      </li>
+                      <li>
+                        <a href="hand-scoring.html">Scoring</a>
+                      </li>
+                      <li>
+                        <a href="https://triviumcte.com/" target="_blank" rel="noopener noreferrer">CTE</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <div class="footerLinksOut">
+                <div class="footerLinks">
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li>
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="careers.html">Careers</a>
+                    <li>
+                      <a href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4 newsLetterBox newsLetterBoxDesktop desktopData">
+              <h4>Subscribe to our Newsletter</h4>
+              <p>We don't send spam mails.</p>
+              <form>
+                 <div class="inputOut">
+                  <input type="text" class="myInput" placeholder="Enter Email" name="" id="">
+                  <span><img src="images/mail.svg" alt="mail">
+                 </div>
+                 <button  class="btn" ><span><img src="images/send.svg" alt="Subscribe"></span>Subscribe</button>
+              </form>
+            </div>
+            <div class="col-md-12 col-lg-4 officeAddress">
+              <h4>India Office:</h4>
+              <ul>
+                <li>
+                  <span><img src="images/phone.svg" alt="phone"></span>
+                    +91-11-66509601, +91-11-66509676
+                </li>
+                <li>
+                  <span><img src="images/mailIcon.svg" alt="mail"></span>
+                    inquiry@triviumedu.com
+                </li>
+                <li>
+                  <span><img src="images/location.svg" alt="location"></span>
+                   306-307, Third Floor, Elegance Tower,<br> 
+                   Jasola Vihar, District Centre, <br>
+                   New Delhi, Delhi 110025
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-12 col-lg-4 officeAddress">
+              <h4>UK Office:</h4>
+              <ul>
+                <li>
+                  <span><img src="images/phone.svg" alt="phone"></span>
+                  +44 207 362 2935
+                </li>
+                <li>
+                  <span><img src="images/mailIcon.svg" alt="mail"></span>
+                    simon.peacock@triviumservice.com
+                </li>
+                <li>
+                  <span><img src="images/location.svg" alt="location"></span>
+                    Suite 100 - The Old School House <br>
+                    Faringdon - Oxon - UK
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-12 col-lg-4 officeAddress">
+              <h4>US Office:</h4>
+              <ul>
+                <li>
+                  <span><img src="images/phone.svg" alt="phone"></span>
+                     +1-813-361-3515
+                </li>
+                <li>
+                  <span><img src="images/mailIcon.svg" alt="mail"></span>
+                    nick.maruhnich@triviumedu.com
+                </li>
+                <li>
+                  <span><img src="images/location.svg" alt="location"></span>
+                    220 Davidson Ave, Suite 118,<br> Somerset NJ 08873
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-12 col-lg-4 newsLetterBox newsLetterBoxMobile">
+              <h4>Subscribe to our Newsletter</h4>
+              <p>We don't send spam mails.</p>
+              <form>
+                 <div class="inputOut">
+                  <input type="text" class="myInput" placeholder="Enter Email" name="" id="">
+                  <span><img src="images/mail.svg" alt="mail">
+                 </div>
+                 <button  class="btn" ><span><img src="images/send.svg" alt="Subscribe"></span>Subscribe</button>
+              </form>
+            </div>
+          </div> 
+      </div>
+      <div class="copyRight">
+        <div class="container">
+          Copyright &#169; 2025 Trivium Education Services Pvt. Ltd., All Rights Reserved. 
+        </div>
+      </div>
+    </footer>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <!-- <script src="js/jquery-3.2.1.slim.min.js"></script>-->
+    <script src="js/main.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+  	/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 120) {
+        $('#back2Top').fadeIn();
+		$("header").addClass('myTop');
+    } else {
+        $('#back2Top').fadeOut();
+		$("header").removeClass('myTop');
+    }
+});
+$(document).ready(function () {
+
+    $("#contactForm").submit(function (e) {
+
+        e.preventDefault();
+
+        var form = $(this);
+        var messageBox = $("#contactMessage");
+        var submitButton = form.find("button[type='submit']");
+
+        messageBox
+            .hide()
+            .removeClass("alert alert-success alert-danger")
+            .html("");
+
+        submitButton
+            .prop("disabled", true)
+            .text("Submitting...");
+
+        $.ajax({
+            url: form.attr("action"),
+            type: "POST",
+            data: form.serialize(),
+            dataType: "json",
+
+            success: function (response) {
+
+                if (response.success) {
+
+                    messageBox
+                        .removeClass("alert-danger")
+                        .addClass("alert alert-success")
+                        .html(response.message)
+                        .fadeIn();
+
+                    form[0].reset();
+
+                } else {
+
+                    messageBox
+                        .removeClass("alert-success")
+                        .addClass("alert alert-danger")
+                        .html(response.message || "Something went wrong.")
+                        .fadeIn();
+                }
+            },
+
+            error: function (xhr) {
+
+                console.log("Server response:", xhr.responseText);
+
+                var errorMessage =
+                    "Something went wrong. Please try again.";
+
+                if (xhr.responseJSON && xhr.responseJSON.message) {
+                    errorMessage = xhr.responseJSON.message;
+                }
+
+                messageBox
+                    .removeClass("alert-success")
+                    .addClass("alert alert-danger")
+                    .html(errorMessage)
+                    .fadeIn();
+            },
+
+            complete: function () {
+
+                submitButton
+                    .prop("disabled", false)
+                    .text("Submit");
+            }
+        });
+    });
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+    
+//   $("form").submit(function(e){
+//     	Email.send({
+//     		Host : "smtp.elasticemail.com",
+//     		Port :"2525",
+//     		Username : "ttrivium43@gmail.com",
+//     		Password : "93494F883314E0F3075D81E9188F48248734",
+//     		To : 'inquiry@triviumedu.com',
+//     		From : "ttrivium43@gmail.com",
+//     		Subject : "Website:Contact Us from:"+$('#name').val(),
+//     		Body : "Received contact us form and details are - Name:"+$('#name').val()+"; Email:"+$('#email').val()+"; Phone:"+$('#number').val()+"; Message:"+$('#message').val()
+//     	}).then(
+    	    
+//     	  message => ClearMessage(message)
+    	  
+//     	);
+//     	e.preventDefault();
+//     });
+
+function ClearMessage(message){
+    alert(message.toLowerCase()=='ok'?"Details sent successfully":message);
+    $('#name').val('');
+    $('#email').val('');
+    $('#number').val('');
+    $('#message').val('');
+}
+
+});
+ /*Scroll to top when arrow up clicked END*/
+ $('#recipeCarousel').carousel({
+  interval: 10000
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+//submenu
+$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+  if (!$(this).next().hasClass('show')) {
+    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+  }
+  var $subMenu = $(this).next(".dropdown-menu");
+  $subMenu.toggleClass('show');
+
+  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+    $('.dropdown-submenu .show').removeClass("show");
+  });
+
+  return false;
+});
+  </script>
+  <script>
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 8,
+            center: { lat: -34.397, lng: 150.644 } // Set initial map center
+        });
+
+        const locations = [
+            { lat: -33.867, lng: 151.206, title: 'Location 1' },
+            { lat: -33.917, lng: 151.216, title: 'Location 2' },
+            { lat: -33.947, lng: 151.236, title: 'Location 3' }
+            // Add more locations as needed
+        ];
+
+        // Loop through locations and add markers
+        locations.forEach(function (location) {
+            new google.maps.Marker({
+                position: { lat: location.lat, lng: location.lng },
+                map,
+                title: location.title
+            });
+        });
+    }
+</script>
+  </body>
+</html>
